@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Resources\FeatureResource;
 use App\Models\Feature;
 use App\Models\UsedFeature;
+use App\Services\ClientCreditService;
+use App\Services\CreditService;
 use Illuminate\Http\Request;
 
 class Feature1Controller extends Controller
@@ -42,12 +44,13 @@ class Feature1Controller extends Controller
         $number1 = (float)$data['number1'];
         $number2 = (float)$data['number2'];
 
-        $user->decreaseCredits($this->feature->required_credits);
+        $creditService = new CreditService();
+        $creditService->decrease($user, $this->feature->required_credits);
 
         UsedFeature::create([
             'feature_id' => $this->feature->id,
             'user_id' => $user->id,
-            'credits' => $this->feature->credits,
+            'credits' => $this->feature->required_credits,
             'data' => $data
         ]);
 

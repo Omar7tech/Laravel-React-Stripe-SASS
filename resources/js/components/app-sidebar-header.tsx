@@ -1,8 +1,9 @@
+import { usePage, Link } from '@inertiajs/react';
 import { Breadcrumbs } from '@/components/breadcrumbs';
 import { SidebarTrigger } from '@/components/ui/sidebar';
 import type { BreadcrumbItem as BreadcrumbItemType, SharedData } from '@/types';
 import { Badge } from './ui/badge';
-import { usePage } from '@inertiajs/react';
+import { Button } from './ui/button';
 
 export function AppSidebarHeader({
     breadcrumbs = [],
@@ -18,11 +19,16 @@ export function AppSidebarHeader({
                 <SidebarTrigger className="-ml-1" />
                 <Breadcrumbs breadcrumbs={breadcrumbs} />
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center gap-2">
                 <Badge variant="secondary" className='flex gap-1'>
                     <img width={15} src="https://img.icons8.com/emoji/48/coin-emoji.png" alt="coin" />
                     <span className={coins === 0 ? 'text-destructive' : ''}>{coins}</span>
                 </Badge>
+                <Button asChild variant="outline" size="sm">
+                    <Link href="/">
+                        Get More
+                    </Link>
+                </Button>
             </div>
         </header>
     );

@@ -1,5 +1,6 @@
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid, Minus, Plus, Stars } from 'lucide-react';
+import { LayoutGrid, Stars } from 'lucide-react';
+import { route } from 'ziggy-js';
 import { NavFooter } from '@/components/nav-footer';
 import { NavMain } from '@/components/nav-main';
 import { NavUser } from '@/components/nav-user';
@@ -15,7 +16,6 @@ import {
 import { dashboard } from '@/routes';
 import type { NavItem } from '@/types';
 import AppLogo from './app-logo';
-import { route } from 'ziggy-js';
 
 const mainNavItems: NavItem[] = [
     {

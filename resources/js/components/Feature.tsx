@@ -1,12 +1,12 @@
-import AppLayout from '@/layouts/app-layout'
 import { Head, Link, usePage } from '@inertiajs/react'
+import { Lock, CreditCard } from 'lucide-react'
 import React from 'react'
-import { SharedData } from '@/types'
-import type { Feature, BreadcrumbItem } from '@/types'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { Lock, CreditCard } from 'lucide-react'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import AppLayout from '@/layouts/app-layout'
+import type { SharedData } from '@/types'
+import type { Feature, BreadcrumbItem } from '@/types'
 
 const Feature = ({ feature, answer, children, breadcrumbs }: { feature: Feature, answer: string, children: React.ReactNode, breadcrumbs?: BreadcrumbItem[] }) => {
     const { auth } = usePage<SharedData>().props;

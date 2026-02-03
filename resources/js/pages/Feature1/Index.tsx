@@ -1,10 +1,9 @@
-import InputError from "@/components/input-error";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { useForm } from "@inertiajs/react";
-import Feature from "@/components/Feature";
 import { route } from "ziggy-js";
+import Feature from "@/components/Feature";
+import InputError from "@/components/input-error";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import type { BreadcrumbItem } from "@/types";
 
 const breadcrumbs: BreadcrumbItem[] = [
@@ -19,7 +18,7 @@ export default function Index({ feature, answer }: { feature: Feature, answer: s
         number1: "",
         number2: "",
     });
-    const submit = (e: any) => {
+    const submit = (e: React.FormEvent) => {
         e.preventDefault();
         post(route('feature1.calculate'), {
             onSuccess() {
