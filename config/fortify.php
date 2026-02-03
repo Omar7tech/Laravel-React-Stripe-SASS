@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Feature;
 use Laravel\Fortify\Features;
 
 return [
