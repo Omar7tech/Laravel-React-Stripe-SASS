@@ -1,5 +1,5 @@
 import { Link } from '@inertiajs/react';
-import { LayoutGrid, Stars } from 'lucide-react';
+import { DollarSignIcon, LayoutGrid, Stars } from 'lucide-react';
 import { route } from 'ziggy-js';
 import { NavFooter } from '@/components/nav-footer';
 import { NavMain } from '@/components/nav-main';
@@ -32,6 +32,11 @@ const mainNavItems: NavItem[] = [
         title: 'Subtraction Feature',
         href: route('feature2.index'),
         icon: Stars,
+    },
+    {
+        title: 'Credits',
+        href: route('credits.index'),
+        icon: DollarSignIcon,
     },
 ];
 

@@ -41,6 +41,7 @@ declare module 'ziggy-js' {
     "two-factor.regenerate-recovery-codes": [],
     "home": [],
     "dashboard": [],
+    "credits.index": [],
     "feature1.index": [],
     "feature1.calculate": [],
     "feature2.index": [],

@@ -32,7 +32,7 @@ class Feature1Controller extends Controller
     public function calculate(Request $request)
     {
         $user = $request->user();
-        if($user->available_credits < $this->feature->required_credits){
+        if($user->available_credits < $this->feature->required_credits || $user->available_credits == 0){
             return redirect()->back()->with('error', 'You do not have enough credits to use this feature');
         }
 
