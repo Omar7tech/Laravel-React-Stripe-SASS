@@ -1,4 +1,4 @@
-# Laravel React Stripe SaaS Starter Kit
+# Laravel React Educational Platform
 
 <div align="center">
 
@@ -10,7 +10,26 @@
 
 </div>
 
-> A modern, fully-featured Laravel 12 + Inertia 2 + React 19 SaaS starter kit with Stripe integration for building subscription-based services.
+> A comprehensive Laravel 12 + Inertia 2 + React 19 educational platform designed for beginners to learn web development concepts through hands-on practice.
+
+---
+
+## 🎓 Educational Purpose
+
+### **Learning Objectives**
+This project is designed as an **educational tool** for teaching fundamental web development concepts:
+
+- **🔐 Authentication**: User registration, login, and session management
+- **💳 Payment Integration**: Stripe payment processing and credit systems
+- **📊 Analytics**: Feature usage tracking and dashboard visualization
+- **⚡ Feature Access**: Credit-based feature access system
+- **🎨 Modern UI**: Responsive design with Tailwind CSS and React components
+
+### **Target Audience**
+- **👨 Beginners**: Developers new to Laravel and React
+- **🎓 Students**: Learning web development concepts
+- **👨‍🏫 Educators**: Teaching material for web development courses
+- **🚀 Startups**: Quick MVP development and prototyping
 
 ---
 
@@ -19,9 +38,9 @@
 ### **Modern & Professional**
 - **Clean Architecture**: Utilizes modern design patterns with Tailwind CSS
 - **Component-Based**: Built with Radix UI for accessible, reusable components
-- **Responsive First**: Mobile-optimized layout that works seamlessly on all screen sizes
+- **Responsive First**: Mobile-optimized layout that works on all screen sizes
 - **Interactive Elements**: Smooth transitions, hover states, and loading indicators
-- **Semantic HTML**: Proper structure and WCAG accessibility compliance
+- **Semantic HTML**: Proper structure and accessibility compliance
 - **Dark Mode Support**: Automatic theme switching for user preference
 
 ### **Visual Design System**
@@ -91,13 +110,26 @@
 laravel-react-stripe-sass/
 ├── 📁 app/                          # Application Logic
 │   ├── Http/Controllers/            # API Controllers
+│   │   ├── DashboardController.php     # Dashboard analytics
+│   │   ├── CreditController.php        # Payment processing
+│   │   ├── Feature1Controller.php      # Calculate Sum feature
+│   │   └── Feature2Controller.php      # Calculate Subtraction feature
 │   ├── Models/                     # Eloquent Models
+│   │   ├── User.php                 # User management
+│   │   ├── Feature.php              # Feature definitions
+│   │   ├── UsedFeature.php          # Usage tracking
+│   │   ├── Transaction.php          # Payment records
+│   │   └── Package.php              # Credit packages
 │   └── Providers/                  # Service Providers
 ├── 🗄️ database/                     # Database Layer
 │   ├── migrations/                  # Schema Definitions
 │   └── seeders/                    # Sample Data
 ├── 🎨 resources/                   # Frontend Assets
 │   ├── js/Pages/                 # React Components
+│   │   ├── Dashboard.tsx           # Analytics dashboard
+│   │   ├── Welcome.tsx             # Landing page
+│   │   ├── Feature1.tsx           # Calculate Sum page
+│   │   └── Feature2.tsx           # Calculate Subtraction page
 │   └── css/                      # Stylesheets
 ├── 🛣 routes/                       # URL Routing
 ├── ⚙️ config/                       # Application Config
@@ -140,7 +172,7 @@ id | user_id | feature_id | credits | data | created_at | updated_at
 
 ---
 
-## � Quick Start
+## 🚀 Quick Start
 
 ### **Prerequisites**
 <div align="center">
@@ -152,20 +184,20 @@ id | user_id | feature_id | credits | data | created_at | updated_at
 </div>
 
 ```bash
-# 📥 Clone the repository
+# Clone the repository
 git clone https://github.com/your-username/laravel-react-stripe-sass
 
-# 📦 Install dependencies
+# Install dependencies
 composer install
 npm install
 
-# ⚙️ Environment setup
+# Environment setup
 cp .env.example .env
 php artisan key:generate
 php artisan migrate
 php artisan db:seed
 
-# 🚀 Start development
+# Start development server
 npm run dev
 ```
 
@@ -198,6 +230,12 @@ npm run dev
 - **Credit Packages**: Tiered pricing (Basic, Silver, Gold)
 - **Transaction Recording**: Full audit trail
 - **Webhook Handling**: Stripe webhook processing
+
+### **⚡ Feature System**
+- **Calculate Sum**: Educational feature demonstrating basic arithmetic operations
+- **Calculate Subtraction**: Educational feature demonstrating subtraction operations
+- **Credit Validation**: Prevents usage when credits are insufficient
+- **Usage Tracking**: Records all feature interactions for learning analytics
 
 ---
 
@@ -284,29 +322,28 @@ Response: {
 
 ---
 
-## 🎯 Perfect Use Cases
+## 🎯 Educational Use Cases
 
 <div align="center">
 
-![SaaS](https://img.shields.io/badge/SaaS-0078FF.svg?style=for-the-badge)
-![B2B](https://img.shields.io/badge/B2B-28A745.svg?style=for-the-badge)
 ![Education](https://img.shields.io/badge/Education-4CAF50.svg?style=for-the-badge)
+![Learning](https://img.shields.io/badge/Learning-228B22.svg?style=for-the-badge)
 
 </div>
 
-This starter kit is ideal for:
+This educational platform is ideal for:
 
-- **🏢 SaaS Applications**: Subscription-based services with credit systems
-- **🎓 Educational Platforms**: Learning management systems with feature access
-- **🏢 B2B Services**: Internal tools with usage analytics
-- **💼 Freelance Platforms**: Project management with client billing
-- **🚀 Startups**: MVP development with rapid scaling capability
+- **� Students**: Learning web development concepts through hands-on practice
+- **👨‍� Educators**: Teaching material for web development courses
+- **🏢 Self-Learners**: Understanding full-stack development patterns
+- **� Beginners**: Starting their journey in web development
+- **� Developers**: Learning modern frameworks and best practices
 
 ---
 
 <div align="center">
 
-**Built with ❤️ using modern web technologies**
+**Built with ❤️ for educational purposes**
 
 ![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20.svg?style=for-the-badge&logo=laravel)
 ![React](https://img.shields.io/badge/React-19-61DAFB.svg?style=for-the-badge&logo=react)
