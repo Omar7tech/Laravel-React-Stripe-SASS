@@ -1,4 +1,4 @@
-# Laravel React Educational Platform
+# Laravel + React + Stripe MVP
 
 <div align="center">
 
@@ -10,26 +10,26 @@
 
 </div>
 
-> A comprehensive Laravel 12 + Inertia 2 + React 19 educational platform designed for beginners to learn web development concepts through hands-on practice.
+> A complete Laravel 12 + Inertia 2 + React 19 starter kit designed for **educational purposes** - learn how to build modern web applications with credit systems and Stripe payment integration.
 
 ---
 
 ## 🎓 Educational Purpose
 
-### **Learning Objectives**
-This project is designed as an **educational tool** for teaching fundamental web development concepts:
+This project serves as a **comprehensive educational tool** for learning modern web development through hands-on practice:
 
-- **🔐 Authentication**: User registration, login, and session management
-- **💳 Payment Integration**: Stripe payment processing and credit systems
-- **📊 Analytics**: Feature usage tracking and dashboard visualization
-- **⚡ Feature Access**: Credit-based feature access system
-- **🎨 Modern UI**: Responsive design with Tailwind CSS and React components
+### **🎯 Learning Objectives**
+- **🔐 Authentication**: Learn user registration, login, and session management
+- **💳 Payment Integration**: Understand Stripe payment processing and credit systems
+- **📊 Analytics**: Learn feature usage tracking and dashboard visualization
+- **⚡ Feature Access**: Implement credit-based feature access systems
+- **🎨 Modern UI**: Build responsive designs with Tailwind CSS and React components
 
-### **Target Audience**
-- **👨 Beginners**: Developers new to Laravel and React
-- **🎓 Students**: Learning web development concepts
+### **👨 Target Audience**
 - **👨‍🏫 Educators**: Teaching material for web development courses
-- **🚀 Startups**: Quick MVP development and prototyping
+- **🎓 Students**: Learning web development concepts through practice
+- **� Beginners**: Starting their journey in web development
+- **� Developers**: Learning modern frameworks and best practices
 
 ---
 
@@ -326,18 +326,18 @@ Response: {
 
 <div align="center">
 
-![Education](https://img.shields.io/badge/Education-4CAF50.svg?style=for-the-badge)
-![Learning](https://img.shields.io/badge/Learning-228B22.svg?style=for-the-badge)
+![Education](https://img.shields.io/badge/Education-4CAF50.svg?style=for-the-badge&logo=Education)
+![Learning](https://img.shields.io/badge/Learning-228B22.svg?style=for-the-badge&logo=Learning)
 
 </div>
 
-This educational platform is ideal for:
+This educational starter kit is ideal for:
 
-- **� Students**: Learning web development concepts through hands-on practice
-- **👨‍� Educators**: Teaching material for web development courses
+- **🎓 Students**: Learning web development concepts through hands-on practice
+- **👨‍🏫 Educators**: Teaching material for web development courses
 - **🏢 Self-Learners**: Understanding full-stack development patterns
-- **� Beginners**: Starting their journey in web development
-- **� Developers**: Learning modern frameworks and best practices
+- **🚀 Beginners**: Starting their journey in web development
+- **🔬 Developers**: Learning modern frameworks and best practices
 
 ---
 
