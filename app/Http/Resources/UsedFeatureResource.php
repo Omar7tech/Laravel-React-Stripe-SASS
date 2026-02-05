@@ -16,7 +16,7 @@ class UsedFeatureResource extends JsonResource
                 'description' => $this->feature->description,
                 'required_credits' => $this->feature->required_credits,
             ],
-            'credits_used' => $this->credits_used,
+            'credits_used' => $this->credits,
             'created_at' => $this->created_at->format('M j, Y H:i'),
         ];
     }
