@@ -223,15 +223,64 @@ STRIPE_WEBHOOK_SECRET=whsec_xxxx
 ## 📚 API Documentation
 
 ### **Core Endpoints**
+```http
+POST   /login                    # User authentication
+POST   /register                 # User registration  
+POST   /logout                  # User logout
+GET    /dashboard                # Dashboard data and statistics
+POST   /buy-credits/webhook      # Stripe webhook handling
+GET    /buy-credits             # Credit purchase page
+POST   /buy-credits/{package}   # Process credit purchase
+GET    /feature1                # Calculate Sum feature page
+POST   /feature1/calculate       # Calculate Sum processing
+GET    /feature2                # Calculate Subtraction feature page  
+POST   /feature2/calculate       # Calculate Subtraction processing
+GET    /buy-credits/success       # Purchase success page
+GET    /buy-credits/cancel        # Purchase cancel page
 ```
-POST   /login          # User authentication
-POST   /register        # User registration
-POST   /logout         # User logout
-GET    /dashboard       # Dashboard data and statistics
-POST   /credits/purchase # Process Stripe payments
-GET    /features        # List available features
-POST   /features/{id}/use # Access specific feature
+
+### **Feature Controllers**
+- **Feature1Controller**: Calculate Sum feature with credit validation
+- **Feature2Controller**: Calculate Subtraction feature with credit validation
+
+### **Credit Management**
+- **CreditController**: Handles Stripe payments, webhooks, and credit packages
+- **CreditService**: Manages user credit balance and transactions
+
+### **Request/Response Examples**
+
+#### **Feature Usage**
+```http
+POST /feature1/calculate
+Content-Type: application/json
+Body: {
+  "number1": 10,
+  "number2": 20
+}
+
+Response: {
+  "answer": "30", // 10 + 20 = 30
+  "redirect": "feature1.index"
+}
 ```
+
+#### **Credit Purchase**
+```http
+POST /buy-credits/{package}
+Content-Type: application/json
+Headers: {
+  "X-CSRF-TOKEN": "token"
+}
+
+Response: {
+  "redirect": "stripe_checkout_url"
+}
+```
+
+### **Authentication Flow**
+- **Middleware**: `auth` and `verified` middleware applied to protected routes
+- **Session Management**: Laravel's built-in session handling
+- **CSRF Protection**: Automatic CSRF token validation
 
 ---
 
