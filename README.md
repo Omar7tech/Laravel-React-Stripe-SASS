@@ -1,227 +1,267 @@
 # Laravel React Stripe SaaS Starter Kit
 
-A modern, fully-featured Laravel 12 + Inertia 2 + React 19 SaaS application starter kit with Stripe integration for building subscription-based services.
+<div align="center">
+
+![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20.svg?style=for-the-badge&logo=laravel)
+![React](https://img.shields.io/badge/React-19-61DAFB.svg?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-blue.svg?style=for-the-badge&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.0.0-38B2AC.svg?style=for-the-badge&logo=tailwind-css)
+![Stripe](https://img.shields.io/badge/Stripe-PHP-19.3.0-purple.svg?style=for-the-badge&logo=stripe)
+
+</div>
+
+> A modern, fully-featured Laravel 12 + Inertia 2 + React 19 SaaS starter kit with Stripe integration for building subscription-based services.
+
+---
+
+## 🎨 Design Philosophy
+
+### **Modern & Professional**
+- **Clean Architecture**: Utilizes modern design patterns with Tailwind CSS
+- **Component-Based**: Built with Radix UI for accessible, reusable components
+- **Responsive First**: Mobile-optimized layout that works seamlessly on all screen sizes
+- **Interactive Elements**: Smooth transitions, hover states, and loading indicators
+- **Semantic HTML**: Proper structure and WCAG accessibility compliance
+- **Dark Mode Support**: Automatic theme switching for user preference
+
+### **Visual Design System**
+- **Color Palette**: 
+  - Primary: `#3B82F6` (Blue) - Actions and primary elements
+  - Secondary: `#64748B` (Slate) - Text and backgrounds
+  - Accent: `#F97316` (Orange) - Warnings and destructive states
+  - Success: `#10B981` (Green) - Positive feedback
+  - Neutral: `#6B7280` (Gray) - Secondary information
+
+- **Typography**: Inter font family for clean, readable text
+- **Spacing**: Consistent visual hierarchy using Tailwind's spacing system
+- **Icons**: Lucide React icons for consistency and clarity
+
+---
 
 ## 🚀 Features
 
 ### **Core Functionality**
-- **User Authentication**: Complete user registration, login, email verification, and 2FA support
-- **Credit System**: User credit management with purchase history and usage tracking
-- **Feature Access**: Feature usage tracking with detailed analytics and history
-- **Stripe Integration**: Full Stripe payment processing for credit purchases
-- **Modern Dashboard**: Comprehensive analytics dashboard with statistics and data visualization
-- **Responsive Design**: Mobile-first responsive UI using Tailwind CSS
+- **🔐 User Authentication**: Complete user registration, login, email verification, and 2FA support
+- **💳 Credit System**: User credit management with purchase history and usage tracking
+- **⚡ Feature Access**: Feature usage tracking with detailed analytics and history
+- **💰 Stripe Integration**: Full Stripe payment processing for credit purchases
+- **📊 Modern Dashboard**: Comprehensive analytics dashboard with statistics and data visualization
+- **📱 Responsive Design**: Mobile-first responsive UI using Tailwind CSS
 
-### **Tech Stack**
+---
 
-#### **Backend**
+## 🛠 Tech Stack
+
+### **Backend Technologies**
+<div align="center">
+
+![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4.svg?style=for-the-badge&logo=php)
+![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20.svg?style=for-the-badge&logo=laravel)
+![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1.svg?style=for-the-badge&logo=mysql)
+![Stripe](https://img.shields.io/badge/Stripe-PHP-19.3.0-purple.svg?style=for-the-badge&logo=stripe)
+
+</div>
+
 - **Laravel 12**: Modern PHP framework with robust routing and middleware
 - **Inertia 2**: Seamless server-side rendering with client-side routing
 - **MySQL/SQLite**: Database with proper relationships and migrations
 - **Stripe PHP**: Official Stripe SDK for payment processing
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development
 
-#### **Frontend**
+### **Frontend Technologies**
+<div align="center">
+
+![React](https://img.shields.io/badge/React-19-61DAFB.svg?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-blue.svg?style=for-the-badge&logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-7.0.4-646CFF.svg?style=for-the-badge&logo=vite)
+
+</div>
+
 - **React 19**: Latest React with hooks and modern patterns
 - **TypeScript**: Full type safety and IntelliSense support
 - **Vite**: Fast build tool and development server
 - **Radix UI**: Modern, accessible component library
 - **Lucide React**: Beautiful, consistent icon library
 
-## 📁 Project Structure
+---
+
+## 📁 Project Architecture
 
 ```
 laravel-react-stripe-sass/
-├── app/
-│   ├── Http/
-│   │   ├── Controllers/
-│   │   │   ├── DashboardController.php
-│   │   │   └── CreditController.php
-│   ├── Models/
-│   │   ├── User.php
-│   │   ├── Feature.php
-│   │   ├── UsedFeature.php
-│   │   ├── Transaction.php
-│   │   └── Package.php
-│   ├── Providers/
-│   │   └── RouteServiceProvider.php
-├── database/
-│   ├── migrations/
-│   │   ├── 2026_01_30_100252_create_packages_table.php
-│   │   ├── 2026_01_30_100509_create_transactions_table.php
-│   │   ├── 2026_01_30_100523_create_features_table.php
-│   │   └── 2026_01_30_100535_create_used_features_table.php
-├── resources/
-│   ├── js/
-│   │   ├── Pages/
-│   │   │   ├── Dashboard.tsx
-│   │   ├── Welcome.tsx
-│   │   └── ...
-│   ├── css/
-│   │   └── app.css
-├── routes/
-│   ├── web.php
-│   └── api.php
-├── composer.json
-├── package.json
-├── vite.config.ts
-└── README.md
+├── 📁 app/                          # Application Logic
+│   ├── Http/Controllers/            # API Controllers
+│   ├── Models/                     # Eloquent Models
+│   └── Providers/                  # Service Providers
+├── 🗄️ database/                     # Database Layer
+│   ├── migrations/                  # Schema Definitions
+│   └── seeders/                    # Sample Data
+├── 🎨 resources/                   # Frontend Assets
+│   ├── js/Pages/                 # React Components
+│   └── css/                      # Stylesheets
+├── 🛣 routes/                       # URL Routing
+├── ⚙️ config/                       # Application Config
+└── 📦 package.json                  # Dependencies
 ```
+
+---
 
 ## 🗄️ Database Schema
 
 ### **Users Table**
-- `id`, `name`, `email`, `password`, `available_credits`
-- `email_verified_at`, `two_factor_secret`, `two_factor_recovery_codes`, `remember_token`
-- `two_factor_confirmed_at`
+```sql
+id | name | email | password | available_credits | created_at | updated_at
+---|-------|-------|----------|------------------|------------|------------
+```
 
 ### **Features Table**
-- `id`, `image`, `route_name`, `name`, `description`, `required_credits`, `active`
-- `created_at`, `updated_at`
+```sql
+id | image | route_name | name | description | required_credits | active
+---|-------|-------|-----------|-------------|----------------|--------
+```
 
 ### **Packages Table**
-- `id`, `name`, `price`, `credits`
-- `created_at`, `updated_at`
+```sql
+id | name | price | credits | created_at | updated_at
+---|----|------|-------|---------|----------|----------
+```
 
 ### **Transactions Table**
-- `id`, `user_id`, `package_id`, `price`, `credits`, `session_id`, `status`
-- `created_at`, `updated_at`
+```sql
+id | user_id | package_id | price | credits | session_id | status
+---|--------|----------|------------|---------|-----------|--------
+```
 
 ### **Used Features Table**
-- `id`, `user_id`, `feature_id`, `credits`, `data` (JSON), `created_at`, `updated_at`
+```sql
+id | user_id | feature_id | credits | data | created_at | updated_at
+---|----|--------|------------|--------|------|----------|----------
+```
 
-## 🔧 Installation & Setup
+---
 
-### Prerequisites
-- PHP 8.2+
-- Composer 2.0+
-- Node.js 18+
-- npm or yarn
+## � Quick Start
 
-### Quick Start
+### **Prerequisites**
+<div align="center">
+
+![PHP](https://img.shields.io/badge/PHP-%3E8.2+-777BB4.svg?style=for-the-badge&logo=php)
+![Node.js](https://img.shields.io/badge/Node.js-18+-339933.svg?style=for-the-badge&logo=node.js)
+![Composer](https://img.shields.io/badge/Composer-2.0+-8856F7.svg?style=for-the-badge&logo=composer)
+
+</div>
+
 ```bash
-# Clone the repository
+# 📥 Clone the repository
 git clone https://github.com/your-username/laravel-react-stripe-sass
 
-# Install dependencies
+# 📦 Install dependencies
 composer install
 npm install
 
-# Environment setup
+# ⚙️ Environment setup
 cp .env.example .env
 php artisan key:generate
 php artisan migrate
 php artisan db:seed
 
-# Start development server
+# 🚀 Start development
 npm run dev
 ```
 
+---
+
 ## 💳 Key Components
 
-### **Dashboard** (`resources/js/Pages/Dashboard.tsx`)
-- **Statistics Cards**: Total credits, credits used, total paid, features used
-- **Feature Usage Table**: Detailed history with feature names, descriptions, credits consumed
-- **Transaction History**: Payment history with package details, amounts, and dates
-- **Most Used Feature**: Analytics showing most frequently used feature
-- **Responsive Design**: Mobile-first layout with Tailwind CSS
+### **🎯 Dashboard** (`resources/js/Pages/Dashboard.tsx`)
+<div align="center">
 
-### **Authentication System**
+![React](https://img.shields.io/badge/React-19-61DAFB.svg?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-blue.svg?style=for-the-badge&logo=typescript)
+
+</div>
+
+- **📊 Statistics Cards**: Total credits, credits used, total paid, features used
+- **📈 Feature Usage Table**: Detailed history with feature names, descriptions, credits consumed
+- **💰 Transaction History**: Payment history with package details, amounts, and dates
+- **⚡ Most Used Feature**: Analytics showing most frequently used feature
+- **📱 Responsive Design**: Mobile-first layout with Tailwind CSS
+
+### **🔐 Authentication System**
 - **Laravel Breeze**: Pre-built authentication scaffolding
 - **Email Verification**: Secure email verification workflow
-- **Two-Factor Authentication**: Enhanced security with backup codes
+- **Two-Factor Authentication**: Optional 2FA for enhanced security
 - **Session Management**: Secure session handling
 
-### **Payment System**
+### **💳 Payment System**
 - **Stripe Integration**: Complete payment processing
 - **Credit Packages**: Tiered pricing (Basic, Silver, Gold)
 - **Transaction Recording**: Full audit trail
 - **Webhook Handling**: Stripe webhook processing
 
-### **Key Features**
-- **Real-time Updates**: Live dashboard with Inertia
-- **Usage Analytics**: Track feature popularity and user engagement
-- **Credit Management**: Automatic deduction and balance tracking
-- **Responsive UI**: Works seamlessly on all devices
-- **Type Safety**: Full TypeScript support
-- **Modern Stack**: Vite, React 19, Tailwind CSS
+---
 
-## 🎯 Business Logic
+## 🚀 Deployment & Production
 
-### **Credit System**
-- Users start with a set of credits (configurable via packages)
-- Credits are deducted when features are used
-- Detailed usage tracking prevents abuse
-- Credit purchase system via Stripe integration
-- Available credits displayed in real-time
-
-### **Feature Access**
-- Features require specific credit amounts to access
-- Usage is tracked per user with timestamps
-- Popular features can be identified and promoted
-- Feature usage data stored for analytics
-
-### **Payment Processing**
-- Stripe handles credit purchases securely
-- Multiple package tiers (Basic: $5/20 credits, Silver: $20/100 credits, Gold: $50/500 credits)
-- Transaction history maintains complete audit trail
-- Webhook processing ensures payment confirmation
-
-## 🔐 Security Features
-
-### **Authentication**
-- **Secure Registration**: Email verification required
-- **Two-Factor Auth**: Optional 2FA for enhanced security
-- **Session Security**: Secure session management
-- **Password Hashing**: Bcrypt encryption for password storage
-- **CSRF Protection**: Built-in Laravel CSRF protection
-- **Rate Limiting**: Prevents abuse and API exploitation
-
-## 📱 Frontend Features
-
-### **User Interface**
-- **Modern Dashboard**: Clean, intuitive interface with real-time updates
-- **Responsive Design**: Mobile-first approach using Tailwind CSS
-- **Interactive Components**: Hover effects, smooth transitions, loading states
-- **Data Visualization**: Charts and graphs for usage analytics
-- **Accessibility**: WCAG compliant with semantic HTML
-- **Performance**: Optimized bundle sizes and lazy loading
-
-## 🚀 Deployment Ready
+### **Environment Configuration**
+```env
+DB_CONNECTION=sqlite
+DB_DATABASE=database/database.sqlite
+STRIPE_SECRET_KEY=sk_test_xxxx
+STRIPE_WEBHOOK_SECRET=whsec_xxxx
+```
 
 ### **Production Ready**
-- **Environment Configured**: Proper `.env` setup for production
-- **Asset Optimization**: Vite builds optimized production assets
-- **Database Migrations**: Ready for production deployment
-- **API Documentation**: Clear endpoints for frontend integration
-- **Testing**: Comprehensive test coverage included
-
-## 📚 Documentation
-
-### **API Endpoints**
-- `POST /login` - User authentication
-- `POST /register` - User registration
-- `POST /logout` - User logout
-- `GET /dashboard` - Dashboard data and statistics
-- `POST /credits/purchase` - Process Stripe payments
-- `GET /features` - List available features
-- `POST /features/{id}/use` - Access specific feature
-
-### **Configuration**
-- **Environment Variables**: Database, Stripe keys, mail settings
-- **Package Tiers**: Configurable credit packages and pricing
-- **Feature Costs**: Dynamic credit requirements per feature
-- **Rate Limits**: Configurable usage limits and restrictions
-
-## 🎓 Perfect For
-
-This starter kit is ideal for:
-- **SaaS Applications**: Subscription-based services with credit systems
-- **Educational Platforms**: Learning management systems with feature access
-- **B2B Services**: Internal tools with usage analytics
-- **Freelance Platforms**: Project management with client billing
-- **Startups**: MVP development with rapid scaling capability
+- ✅ **Environment Configured**: Proper `.env` setup for production
+- ⚡ **Asset Optimization**: Vite builds optimized production assets
+- 🗄️ **Database Migrations**: Ready for production deployment
+- 📚 **API Documentation**: Clear endpoints for frontend integration
+- 🧪 **Testing**: Comprehensive test coverage included
 
 ---
 
-**Built with ❤️ using Laravel 12 + Inertia 2 + React 19 + Stripe + Tailwind CSS**
+## 📚 API Documentation
+
+### **Core Endpoints**
+```
+POST   /login          # User authentication
+POST   /register        # User registration
+POST   /logout         # User logout
+GET    /dashboard       # Dashboard data and statistics
+POST   /credits/purchase # Process Stripe payments
+GET    /features        # List available features
+POST   /features/{id}/use # Access specific feature
+```
+
+---
+
+## 🎯 Perfect Use Cases
+
+<div align="center">
+
+![SaaS](https://img.shields.io/badge/SaaS-0078FF.svg?style=for-the-badge)
+![B2B](https://img.shields.io/badge/B2B-28A745.svg?style=for-the-badge)
+![Education](https://img.shields.io/badge/Education-4CAF50.svg?style=for-the-badge)
+
+</div>
+
+This starter kit is ideal for:
+
+- **🏢 SaaS Applications**: Subscription-based services with credit systems
+- **🎓 Educational Platforms**: Learning management systems with feature access
+- **🏢 B2B Services**: Internal tools with usage analytics
+- **💼 Freelance Platforms**: Project management with client billing
+- **🚀 Startups**: MVP development with rapid scaling capability
+
+---
+
+<div align="center">
+
+**Built with ❤️ using modern web technologies**
+
+![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20.svg?style=for-the-badge&logo=laravel)
+![React](https://img.shields.io/badge/React-19-61DAFB.svg?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-blue.svg?style=for-the-badge&logo=typescript)
+![Stripe](https://img.shields.io/badge/Stripe-PHP-19.3.0-purple.svg?style=for-the-badge&logo=stripe)
+
+</div>
