@@ -1,4 +1,4 @@
-# Laravel + React + Stripe SaaS Starter Kit
+# Laravel + React + Stripe SaaS 
 
 <div align="center">
 
