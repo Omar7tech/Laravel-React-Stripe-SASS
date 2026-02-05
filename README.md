@@ -1,4 +1,4 @@
-# 🚀 Laravel + React + Stripe SaaS Boilerplate | Ship Your SaaS in Days
+# Laravel + React + Stripe SaaS Starter Kit
 
 <div align="center">
 
@@ -13,130 +13,77 @@
 
 </div>
 
-> 🎯 **#1 Laravel SaaS Starter Kit** - Stop wasting months! Complete boilerplate with Stripe payments, authentication, and everything you need to build profitable SaaS applications. **⭐ The perfect foundation for your next SaaS**
+> A complete Laravel 12 + React 19 starter kit with Stripe payments, authentication, and credit system - everything you need to build your SaaS application.
 
 ---
 
-## 🔥 Why This Repository | Build SaaS Faster
+## What This Includes
 
-**⚡ SHIP IN DAYS, NOT MONTHS** | **� MONETIZATION READY** | **� PRODUCTION-GRADE**
+A well-structured starter kit with the essential SaaS features:
 
-Stop building the same features over and over! This battle-tested boilerplate saves you **200+ hours** of development time:
-
-- **🚀 10-Minute Setup** - From zero to running SaaS
-- **💳 Stripe Payments** - One-click payments, subscriptions, webhooks
-- **🔐 Enterprise Auth** - Users, roles, permissions, 2FA
-- **📊 Analytics Dashboard** - Track revenue, users, growth
-- **⚡ Credit System** - Monetize features instantly
-- **🎨 Beautiful UI** - Modern, responsive, accessible
+- **User Authentication** - Registration, login, email verification
+- **Stripe Payments** - Credit packages and payment processing
+- **Credit System** - Feature access control with usage tracking
+- **Analytics Dashboard** - User metrics and transaction history
+- **Modern UI** - Responsive design with Tailwind CSS
 
 ---
 
-## 🎯 Perfect For | Who's Using This?
+## Who This Is For
 
-### 🦄 **Indie Hackers & Entrepreneurs**
-- Ship MVPs in **days**, not months
-- Focus on your unique features, not boilerplate
-- Built-in monetization from day one
-- **� Save $10,000+** in development costs
+### **Entrepreneurs & Indie Hackers**
+- Get started quickly with proven patterns
+- Focus on your unique features
+- Built-in payment processing
 
-### �‍💻 **Developers & Agencies**
-- Save **200+ hours** per project
-- Production-ready, battle-tested code
-- Modern tech stack with best practices
-- **⭐ Client-ready** from day one
+### **Developers & Agencies**
+- Save development time on common features
+- Modern, maintainable codebase
+- Good foundation for client projects
 
-### 🎓 **Students & Learners**
-- **Real-world SaaS architecture**
+### **Students & Learners**
+- Real-world SaaS architecture example
 - Learn modern web development patterns
-- Complete project from scratch
-- **📚 Perfect portfolio** project
-
-### 🏢 **Startups & Teams**
-- Scalable foundation for growth
-- Enterprise-ready features
-- Proven technology stack
-- **🚀 Fast-track** your MVP
+- Complete project with best practices
 
 ---
 
-## � Features | Everything You Need to Succeed
+## Features
 
-### 💰 **MONETIZATION ENGINE**
-- **💳 Stripe Integration** - One-click payments, subscriptions, webhooks
-- **💎 Credit System** - Pay-per-use features, usage tracking
-- **� Tiered Pricing** - Multiple packages, upgrade/downgrade
-- **📊 Revenue Analytics** - Track MRR, churn, user metrics
-- **� Subscription Management** - Recurring billing, cancellations
-
-### � **ENTERPRISE AUTHENTICATION**
-- **�️ Secure Login** - Email/password, social auth ready
-- **✅ Email Verification** - Confirm user emails
-- **🔒 Two-Factor Auth** - Enhanced security
-- **👥 User Management** - Roles, permissions, profiles
-- **🚀 Session Security** - CSRF protection, rate limiting
-
-### 🎨 **MODERN UI/UX**
-- **📱 Mobile-First** - Responsive on all devices
-- **🌙 Dark Mode** - Automatic theme switching
-- **⚡ Lightning Fast** - Optimized performance
-- **♿ Accessible** - WCAG compliant components
-- **🎯 Beautiful Components** - Radix UI + Tailwind CSS
-
-### � **ANALYTICS DASHBOARD**
-- **📈 Real-time Metrics** - Track usage, revenue, growth
-- **📉 Feature Analytics** - Most used features, user behavior
-- **💰 Financial Reports** - Revenue, transactions, refunds
-- **👥 User Insights** - Registration, retention, engagement
+### **Core Functionality**
+- **Authentication** - Complete user registration and login system
+- **Credit System** - Users can purchase credits and use features
+- **Stripe Integration** - Full payment processing with webhooks
+- **Dashboard** - Analytics and user management interface
+- **Responsive Design** - Works on all screen sizes
 
 ---
 
-## 🛠 Tech Stack | Production-Grade Technologies
+## Tech Stack
 
-### **🔥 Backend Powerhouse**
-<div align="center">
-
-![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4.svg?style=for-the-badge&logo=php)
-![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20.svg?style=for-the-badge&logo=laravel)
-![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1.svg?style=for-the-badge&logo=mysql)
-![Redis](https://img.shields.io/badge/Redis-7.0+-DC382D.svg?style=for-the-badge&logo=redis)
-
-</div>
-
-- **Laravel 12** - The most popular PHP framework
+### **Backend**
+- **Laravel 12** - Modern PHP framework
+- **MySQL/SQLite** - Database with migrations
+- **Stripe PHP** - Payment processing
 - **Inertia 2** - Seamless SPA experience
-- **MySQL/PostgreSQL** - Scalable database solutions
-- **Redis** - Lightning-fast caching
-- **Queue System** - Background job processing
 
-### **⚡ Frontend Excellence**
-<div align="center">
-
-![React](https://img.shields.io/badge/React-19-61DAFB.svg?style=for-the-badge&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-blue.svg?style=for-the-badge&logo=typescript)
-![Vite](https://img.shields.io/badge/Vite-7.0.4-646CFF.svg?style=for-the-badge&logo=vite)
-![Tailwind](https://img.shields.io/badge/Tailwind-4.0.0-38B2AC.svg?style=for-the-badge&logo=tailwind-css)
-
-</div>
-
-- **React 19** - Latest React with server components
+### **Frontend**
+- **React 19** - Modern React with hooks
 - **TypeScript** - Type-safe development
-- **Vite** - Instant hot reload, optimized builds
+- **Vite** - Fast build tool
 - **Tailwind CSS** - Utility-first styling
-- **Radix UI** - Accessible component library
+- **Radix UI** - Accessible components
 
 ---
 
-## 🚀 Quick Start | 10-Minute Setup
+## Quick Start
 
-### **Prerequisites**
-<div align="center">
+### Prerequisites
+- PHP 8.2+
+- Node.js 18+
+- Composer
 
-![PHP](https://img.shields.io/badge/PHP-%3E8.2+-777BB4.svg?style=for-the-badge&logo=php)
-![Node.js](https://img.shields.io/badge/Node.js-18+-339933.svg?style=for-the-badge&logo=node.js)
-![Composer](https://img.shields.io/badge/Composer-2.0+-8856F7.svg?style=for-the-badge&logo=composer)
-
-</div>
+### Installation
 
 ```bash
 # Clone the repository
@@ -156,117 +103,50 @@ php artisan db:seed
 npm run dev
 ```
 
-**🎉 That's it! Your SaaS is running in minutes!**
-
 ---
 
-## 📁 Project Architecture | Clean & Scalable
+## Project Structure
 
 ```
 laravel-react-stripe-sass/
-├── 📁 app/                          # Application Logic
-│   ├── Http/Controllers/            # API Controllers
-│   │   ├── DashboardController.php     # Dashboard analytics
-│   │   ├── CreditController.php        # Payment processing
-│   │   ├── Feature1Controller.php      # Calculate Sum feature
-│   │   └── Feature2Controller.php      # Calculate Subtraction feature
-│   ├── Models/                     # Eloquent Models
-│   │   ├── User.php                 # User management
-│   │   ├── Feature.php              # Feature definitions
-│   │   ├── UsedFeature.php          # Usage tracking
-│   │   ├── Transaction.php          # Payment records
-│   │   └── Package.php              # Credit packages
-│   └── Providers/                  # Service Providers
-├── 🗄️ database/                     # Database Layer
-│   ├── migrations/                  # Schema Definitions
-│   └── seeders/                    # Sample Data
-├── 🎨 resources/                   # Frontend Assets
-│   ├── js/Pages/                 # React Components
-│   │   ├── Dashboard.tsx           # Analytics dashboard
-│   │   ├── Welcome.tsx             # Landing page
-│   │   ├── Feature1.tsx           # Calculate Sum page
-│   │   └── Feature2.tsx           # Calculate Subtraction page
-│   └── css/                      # Stylesheets
-├── 🛣 routes/                       # URL Routing
-├── ⚙️ config/                       # Application Config
-└── 📦 package.json                  # Dependencies
+├── app/                    # Application logic
+│   ├── Http/Controllers/   # Controllers
+│   └── Models/            # Eloquent models
+├── database/              # Database files
+│   ├── migrations/        # Schema definitions
+│   └── seeders/          # Sample data
+├── resources/js/          # React components
+├── routes/               # API routes
+└── config/               # Configuration
 ```
 
 ---
 
-## 📊 Database Schema | Optimized for SaaS
+## Database Schema
 
-### **Users Table**
-```sql
-id | name | email | password | available_credits | created_at | updated_at
----|-------|-------|----------|------------------|------------|------------
+- **Users** - User accounts with credit balance
+- **Features** - Available features with credit costs
+- **Packages** - Credit packages for purchase
+- **Transactions** - Payment records
+- **Used Features** - Feature usage tracking
+
+---
+
+## API Endpoints
+
 ```
-
-### **Features Table**
-```sql
-id | image | route_name | name | description | required_credits | active
----|-------|-------|-----------|-------------|----------------|--------
-```
-
-### **Packages Table**
-```sql
-id | name | price | credits | created_at | updated_at
----|----|------|-------|---------|----------|----------
-```
-
-### **Transactions Table**
-```sql
-id | user_id | package_id | price | credits | session_id | status
----|--------|----------|------------|---------|-----------|--------
-```
-
-### **Used Features Table**
-```sql
-id | user_id | feature_id | credits | data | created_at | updated_at
----|----|--------|------------|--------|------|----------|----------
+POST   /login                    # User authentication
+POST   /register                 # User registration
+GET    /dashboard                # Dashboard data
+POST   /buy-credits/{package}   # Purchase credits
+GET    /feature1                # Calculate sum feature
+POST   /feature1/calculate       # Process calculation
 ```
 
 ---
 
-## 💳 Key Components | Production-Ready Features
+## Environment Configuration
 
-### **🎯 Dashboard** (`resources/js/Pages/Dashboard.tsx`)
-<div align="center">
-
-![React](https://img.shields.io/badge/React-19-61DAFB.svg?style=for-the-badge&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-blue.svg?style=for-the-badge&logo=typescript)
-
-</div>
-
-- **📊 Statistics Cards**: Total credits, credits used, total paid, features used
-- **📈 Feature Usage Table**: Detailed history with feature names, descriptions, credits consumed
-- **💰 Transaction History**: Payment history with package details, amounts, and dates
-- **⚡ Most Used Feature**: Analytics showing most frequently used feature
-- **📱 Responsive Design**: Mobile-first layout with Tailwind CSS
-
-### **🔐 Authentication System**
-- **Laravel Breeze**: Pre-built authentication scaffolding
-- **Email Verification**: Secure email verification workflow
-- **Two-Factor Authentication**: Optional 2FA for enhanced security
-- **Session Management**: Secure session handling
-
-### **💳 Payment System**
-- **Stripe Integration**: Complete payment processing
-- **Credit Packages**: Tiered pricing (Basic, Silver, Gold)
-- **Transaction Recording**: Full audit trail
-- **Webhook Handling**: Stripe webhook processing
-
-### **⚡ Feature System**
-- **Calculate Sum**: Educational feature demonstrating basic arithmetic operations
-- **Calculate Subtraction**: Educational feature demonstrating subtraction operations
-- **Credit Validation**: Prevents usage when credits are insufficient
-- **Usage Tracking**: Records all feature interactions for learning analytics
-
----
-
-## 🚀 Deployment | Production Ready
-
-### **Environment Configuration**
 ```env
 DB_CONNECTION=sqlite
 DB_DATABASE=database/database.sqlite
@@ -274,115 +154,22 @@ STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key_here
 STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret_here
 ```
 
-### **Production Ready**
-- ✅ **Environment Configured**: Proper `.env` setup for production
-- ⚡ **Asset Optimization**: Vite builds optimized production assets
-- 🗄️ **Database Migrations**: Ready for production deployment
-- 📚 **API Documentation**: Clear endpoints for frontend integration
-- 🧪 **Testing**: Comprehensive test coverage included
+---
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📚 API Documentation | RESTful Endpoints
+## License
 
-### **Core Endpoints**
-```http
-POST   /login                    # User authentication
-POST   /register                 # User registration  
-POST   /logout                  # User logout
-GET    /dashboard                # Dashboard data and statistics
-POST   /buy-credits/webhook      # Stripe webhook handling
-GET    /buy-credits             # Credit purchase page
-POST   /buy-credits/{package}   # Process credit purchase
-GET    /feature1                # Calculate Sum feature page
-POST   /feature1/calculate       # Calculate Sum processing
-GET    /feature2                # Calculate Subtraction feature page  
-POST   /feature2/calculate       # Calculate Subtraction processing
-GET    /buy-credits/success       # Purchase success page
-GET    /buy-credits/cancel        # Purchase cancel page
-```
-
-### **Request/Response Examples**
-
-#### **Feature Usage**
-```http
-POST /feature1/calculate
-Content-Type: application/json
-Body: {
-  "number1": 10,
-  "number2": 20
-}
-
-Response: {
-  "answer": "30", // 10 + 20 = 30
-  "redirect": "feature1.index"
-}
-```
-
-#### **Credit Purchase**
-```http
-POST /buy-credits/{package}
-Content-Type: application/json
-Headers: {
-  "X-CSRF-TOKEN": "token"
-}
-
-Response: {
-  "redirect": "stripe_checkout_url"
-}
-```
-
----
-
-## 🎯 What You'll Learn | Educational Value
-
-<div align="center">
-
-![Education](https://img.shields.io/badge/Education-4CAF50.svg?style=for-the-badge&logo=Education)
-![Learning](https://img.shields.io/badge/Learning-228B22.svg?style=for-the-badge&logo=Learning)
-
-</div>
-
-This starter kit teaches you:
-
-- **🎓 Full-Stack Development** - Laravel + React integration
-- **💳 Payment Processing** - Stripe integration and webhooks
-- **📊 Analytics & Metrics** - Track usage, revenue, growth
-- **🔐 Security Best Practices** - Authentication, authorization
-- **🎨 Modern UI/UX** - Responsive design, accessibility
-- **⚡ Performance Optimization** - Caching, queues, optimization
-
----
-
-## 🤝 Contributing | Join the Community
-
-**🌟 Star this repo** if it helped you!  
-
-**🐛 Found a bug?** [Open an issue](https://github.com/Omar7tech/Laravel-React-Stripe-SASS/issues)  
-
-**💡 Have an idea?** [Submit a feature request](https://github.com/Omar7tech/Laravel-React-Stripe-SASS/issues)  
-
-**🔧 Want to contribute?** [Check the contributing guide](CONTRIBUTING.md)
-
----
-
-## 📄 License | MIT License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ---
 
 <div align="center">
 
-**⭐ If this helped you, give it a star!**
-
-**🚀 Built with ❤️ by [Omar7tech](https://github.com/Omar7tech)**
-
-![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20.svg?style=for-the-badge&logo=laravel)
-![React](https://img.shields.io/badge/React-19-61DAFB.svg?style=for-the-badge&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-blue.svg?style=for-the-badge&logo=typescript)
-![Stripe](https://img.shields.io/badge/Stripe-PHP-19.3.0-purple.svg?style=for-the-badge&logo=stripe)
-
-**🎯 Build your SaaS faster with this starter kit**
+**Built with ❤️ by [Omar7tech](https://github.com/Omar7tech)**
 
 </div>
