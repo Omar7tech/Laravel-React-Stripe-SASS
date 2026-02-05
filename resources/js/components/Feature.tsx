@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import AppLayout from '@/layouts/app-layout'
 import type { SharedData } from '@/types'
 import type { Feature, BreadcrumbItem } from '@/types'
+import { route } from 'ziggy-js'
 
 const Feature = ({ feature, answer, children, breadcrumbs }: { feature: Feature, answer: string, children: React.ReactNode, breadcrumbs?: BreadcrumbItem[] }) => {
     const { auth } = usePage<SharedData>().props;
@@ -60,7 +61,7 @@ const Feature = ({ feature, answer, children, breadcrumbs }: { feature: Feature,
                                                 You need {feature.required_credits} credits to use this feature, but you only have {availableCredits}.
                                             </p>
                                             <Button asChild className="mt-2">
-                                                <Link href="/">
+                                                <Link href={route('credits.index')}>
                                                     Buy More Credits
                                                 </Link>
                                             </Button>

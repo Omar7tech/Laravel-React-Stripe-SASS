@@ -30,7 +30,7 @@ class CreditController extends Controller
     {
         $stripe = new \Stripe\StripeClient(env('STRIPE_SECRET_KEY'));
         $checkout_session = $stripe->checkout->sessions->create([
-            'line_items' => [
+            'line_items' => [[
                 'price_data' => [
                     'currency' => 'usd',
                     'product_data' => [
@@ -39,7 +39,7 @@ class CreditController extends Controller
                     'unit_amount' => $package->price * 100,
                 ],
                 'quantity' => 1
-            ],
+            ]],
             'mode' => 'payment',
             'success_url' => route('credits.success', [], true),
             'cancel_url' => route('credits.cancel', [], true)

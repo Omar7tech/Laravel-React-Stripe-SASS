@@ -2,6 +2,7 @@ export type * from './auth';
 export type * from './navigation';
 export type * from './ui';
 export type * from './feature';
+export type * from './package';
 
 import type { Auth } from './auth';
 

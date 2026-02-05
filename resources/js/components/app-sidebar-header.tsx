@@ -4,6 +4,7 @@ import { SidebarTrigger } from '@/components/ui/sidebar';
 import type { BreadcrumbItem as BreadcrumbItemType, SharedData } from '@/types';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
+import { route } from 'ziggy-js';
 
 export function AppSidebarHeader({
     breadcrumbs = [],
@@ -25,7 +26,7 @@ export function AppSidebarHeader({
                     <span className={coins === 0 ? 'text-destructive' : ''}>{coins}</span>
                 </Badge>
                 <Button asChild variant="outline" size="sm">
-                    <Link href="/">
+                    <Link href={route('credits.index')}>
                         Get More
                     </Link>
                 </Button>
